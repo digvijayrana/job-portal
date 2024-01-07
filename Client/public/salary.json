@@ -1,0 +1,65 @@
+[
+    {
+        "_id": "c48a7fbe",
+        "title": "Warehouse Associate",
+        "salary": "Average Salary $34,331 per year",
+        "status": "Job Openings",
+        "skills": "Skills"
+    },
+    {
+        "_id": "1d458ac2",
+        "title": "Backend Developer",
+        "salary": "Average Salary $46,052 per year",
+        "status": "Job Openings",
+        "skills": "Skills"
+    },
+    {
+        "_id": "b39879d8",
+        "title": "Front Desk Agent",
+        "salary": "Average Salary $43,402 per year",
+        "status": "Job Openings",
+        "skills": "Skills"
+    },
+    {
+        "_id": "e9d48a3e",
+        "title": "Crew Member",
+        "salary": "Average Salary $44,781 per year",
+        "status": "Job Openings",
+        "skills": "Skills"
+    },
+    {
+        "_id": "2e376aa0",
+        "title": "Software Engineer",
+        "salary": "Average Salary $102,781 per year",
+        "status": "Job Openings",
+        "skills": "Skills"
+    },
+    {
+        "_id": "ed181d15",
+        "title": "App Developer",
+        "salary": "Average Salary $92,781 per year",
+        "status": "Job Openings",
+        "skills": "Skills"
+    },
+    {
+        "_id": "fb5b2e49",
+        "title": "UI/UX Designer",
+        "salary": "Average Salary $108,781 per year",
+        "status": "Job Openings",
+        "skills": "Skills"
+    },
+    {
+        "_id": "cff0e5d7",
+        "title": "Web Developer",
+        "salary": "Average Salary $88,601 per year",
+        "status": "Job Openings",
+        "skills": "Skills"
+    },
+    {
+        "_id": "117ff65e",
+        "title": "Full Stack Developer",
+        "salary": "Average Salary $88,601 per year",
+        "status": "Job Openings",
+        "skills": "Skills"
+    }
+]
