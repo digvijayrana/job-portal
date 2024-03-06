@@ -1,0 +1,82 @@
+##find dublicate in table
+select WORKER_REF_ID, count(WORKER_REF_ID) from Bonus Group by WORKER_REF_ID Having count(WORKER_REF_ID)>1;
+
+## select Nth highest salary 
+
+ select salary from Worker w1 where 2 = (select count(DISTINCT(w2.salary))from Worker w2 where w2.salary>= w1.salary);
+ 
+ ## Group by
+ 
+ ## select no of employe in department 
+ 
+ select department,count(*) from Worker group by department
+ 
+## name of employe those department  have  more than two in department
+ select First_Name from Workers  where Department IN (select Department from Workers group by Department having count(*)>2);
+ 
+
+## employ working with two or more department
+
+select name from employees where id IN(select empId from department group by empID having count(empId)>1 )
+
+select First_Name from Workers where DEPARTMENT IN (select WORKER_ID from Workers group by WORKER_ID  having count(WORKER_ID)>1 );
+
+ ## write a query get max salary in department wise employee name whose taking this salary
+ 
+  select First_Name  from Worker where salary in  (select Max(salary) from Workers group by department);
+SELECT e1.department, e1.name, e1.salary
+FROM users e1
+WHERE e1.salary = (
+    SELECT MAX(e2.salary)
+    FROM users e2
+    WHERE e1.department = e2.department
+)
+
+### select name from department 
+select FIRST_NAME  from Workers  where DEPARTMENT IN(select  DEPARTMENT from Workers Group by DEPARTMENT Having count(DEPARTMENT) >2)
+
+### How do you remove a column from a database
+Alter Table Table_Name drop  column_Name
+
+###How to Delete Data From a MySQL Table?
+DELETE FROM table_name
+WHERE column_name = value_name
+
+## Add new column in Table
+Alter table Table_Name add  column_Name (DataType)
+###  How to add users in MySQL?
+CREATE USER 'testuser' IDENTIFIED BY 'RanaThakur@96';
+
+###Change Column Name 
+ALTER Table Table_Name change Column C1 C2 int(10)
+
+### change Table Name
+Alter Table Table_Name Rename T2
+
+### Update column
+Update Table_Name SET First_NAME = 'DIgvijay' where IwD =2 
+###Get employees who worked in more than one department with SQL query
+
+  SELECT w.First_Name, count(Department) FROM Workers w 
+  INNER JOIN Department d ON w.First_Name=d.First_Name 
+  GROUP BY e.First_Name 
+  HAVING COUNT(Department)>2
+  
+  ### Write your MySQL query statement below delete dublicate email
+delete p1
+from Person as p1, Person as p2
+where p1.Email = p2.Email and p1.Id > p2.Id;
+
+### Inner Join 
+ select b.BONUS_AMOUNT,w.First_Name from Workers w Inner join Bonus b ON w.WORKER_ID=b.WORKER_REF_ID;
+###
+To change the values in the gender field in the table from 'MALE' to 'FEMALE' and from 'FEMALE' to 'MALE', 
+
+UPDATE your_table_name
+SET gender = CASE 
+                WHEN gender = 'MALE' THEN 'FEMALE'
+                WHEN gender = 'FEMALE' THEN 'MALE'
+             END;
+
+
+
